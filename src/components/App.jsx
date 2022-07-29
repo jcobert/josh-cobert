@@ -7,7 +7,7 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
-function App() {
+function App() {  
   return (
     <div className="flex-grow">
       <Header />
