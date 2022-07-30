@@ -11,7 +11,7 @@ function Card(props) {
     <div className="text-center">
       <div className="bg-slate-50 md:w-11/12 md:max-w-2xl mx-auto rounded-xl border border-slate-400 shadow-md">
         {/* Title */}
-        <div className="py-4 font-bold text-xl md:text-2xl text-theme-primary bg-white rounded-xl rounded-b-none shadow-sm">
+        <div className="py-4 font-semibold text-2xl md:text-2xl text-theme-primary bg-white rounded-xl rounded-b-none shadow-sm">
           <h4>{props.title}</h4>
         </div>
         {/* Body */}
