@@ -17,6 +17,7 @@ function Home() {
             descriptionShort={p.descriptionShort}
             descriptionLong={p.descriptionLong}
             details={p.details}
+            technologies={p.technologies}
             img={p.img}
           />
         ))}

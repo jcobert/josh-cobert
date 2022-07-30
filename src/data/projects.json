@@ -4,6 +4,7 @@
         "descriptionShort": "An encyclopedia of the people in your life. And a cheat sheet for those who can't keep track.",
         "descriptionLong": "",
         "details": "",
+        "technologies": ["React", "Redux", "Tailwind CSS"],
         "img": ""
     },
     {
@@ -12,6 +13,7 @@
         "descriptionShort": "A simple Python script to help create a custom map in the Geoguessr game.",
         "descriptionLong": "",
         "details": "",
+        "technologies": ["Python"],
         "img": ""
     },
     {
@@ -20,6 +22,7 @@
         "descriptionShort": "A way to programmatically configure a Facebook Live Stream.",
         "descriptionLong": "",
         "details": "",
+        "technologies": ["Python"],
         "img": ""
     },
     {
@@ -28,6 +31,7 @@
         "descriptionShort": "",
         "descriptionLong": "",
         "details": "",
+        "technologies": ["Phoenix", "Elixir", "PostgreSQL", "Tailwind CSS"],
         "img": ""
     }
 ]
