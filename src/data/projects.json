@@ -1,0 +1,33 @@
+[{
+        "id": 0,
+        "title": "Who's That?",
+        "descriptionShort": "An encyclopedia of the people in your life. And a cheat sheet for those who can't keep track.",
+        "descriptionLong": "",
+        "details": "",
+        "img": ""
+    },
+    {
+        "id": 1,
+        "title": "Geoguessr Map Creator",
+        "descriptionShort": "A simple Python script to help create a custom map in the Geoguessr game.",
+        "descriptionLong": "",
+        "details": "",
+        "img": ""
+    },
+    {
+        "id": 2,
+        "title": "Facebook Live Stream Configurator",
+        "descriptionShort": "A way to programmatically configure a Facebook Live Stream.",
+        "descriptionLong": "",
+        "details": "",
+        "img": ""
+    },
+    {
+        "id": 3,
+        "title": "65 Pool",
+        "descriptionShort": "",
+        "descriptionLong": "",
+        "details": "",
+        "img": ""
+    }
+]
