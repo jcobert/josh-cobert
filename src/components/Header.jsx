@@ -105,7 +105,7 @@ function Header() {
                               isActive
                                 ? "text-theme-primary hover:text-slate-500 font-semibold"
                                 : "text-gray-700 hover:bg-theme-primary hover:text-white"
-                            } px-3 py-2 rounded-md text-sm font-medium`
+                            } px-3 py-2 rounded-md`
                           }
                           aria-current={item.current ? "page" : undefined}
                         >
@@ -132,9 +132,9 @@ function Header() {
                       key={item.name}
                       to={item.to}
                       className={({ isActive }) =>
-                        `text-xl ${
+                        `text-2xl font-flamenco ${
                           isActive
-                            ? "bg-theme-primary text-white font-semibold"
+                            ? "bg-theme-primary text-white font-bold"
                             : "text-gray-700 hover:bg-slate-500 hover:text-white"
                         } block px-3 py-2 rounded-md text-base font-medium text-right`
                       }
