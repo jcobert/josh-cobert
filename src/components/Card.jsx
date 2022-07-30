@@ -1,16 +1,30 @@
 import React from "react";
+import { ChevronRightIcon } from "@heroicons/react/solid";
+import { NavLink } from "react-router-dom";
 
 function Card(props) {
   return (
     <div className="text-center">
-      <div className="bg-slate-100 md:w-11/12 md:max-w-2xl mx-auto p-3 md:p-6 rounded-xl border border-slate-400 shadow-md">
+      <div className="bg-slate-50 md:w-11/12 md:max-w-2xl mx-auto rounded-xl border border-slate-400 shadow-md">
         {/* Title */}
-        <div className="font-bold text-xl">
-            <h4></h4>
+        <div className="py-4 font-bold text-xl text-theme-primary bg-white rounded-xl rounded-b-none shadow-sm">
+          <h4>{props.title}</h4>
         </div>
         {/* Body */}
-        <div className="text-left">
-            <p></p>
+        <div className="text-left px-8 py-4">
+          <p>{props.descriptionShort}</p>
+        </div>
+        {/* CTA */}
+        <div className="bg-gray-50 hover:bg-theme-primary text-slate-700 hover:text-white font-medium w-96 sm:w-72 md:w-48 h-16 md:h-12 mx-auto my-8 rounded-md border border-theme-primary hover:border-white transition-all">
+          <NavLink
+            to={"/projects"}
+            className="flex justify-center h-full"
+          >
+            <p className="self-center">Check it out</p>
+            <div className="self-center">
+              <ChevronRightIcon className="w-6" />
+            </div>
+          </NavLink>
         </div>
       </div>
     </div>

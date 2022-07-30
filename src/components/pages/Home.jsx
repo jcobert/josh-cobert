@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../Heading";
 import Card from "../Card";
+import projects from "../../data/projects.json";
 
 function Home() {
   return (
@@ -9,7 +10,16 @@ function Home() {
         <Heading />
       </div>
       <div>
-        <Card />
+        {projects.map((p) => (
+          <Card 
+            key={p.id}
+            title={p.title}
+            descriptionShort={p.descriptionShort}
+            descriptionLong={p.descriptionLong}
+            details={p.details}
+            img={p.img}
+          />
+        ))}
       </div>
     </div>
   );
