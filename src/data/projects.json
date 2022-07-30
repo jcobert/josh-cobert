@@ -17,7 +17,7 @@
                 "icon": "devicon-tailwindcss-plain colored"
             }
         ],
-        "img": ""
+        "img": "/images/projects/whos-that-preview.png"
     },
     {
         "id": 1,
@@ -29,7 +29,7 @@
             "name": "Python",
             "icon": "devicon-python-plain colored"
         }],
-        "img": ""
+        "img": "/images/projects/geoguessr-preview.png"
     },
     {
         "id": 2,
@@ -41,12 +41,12 @@
             "name": "Python",
             "icon": "devicon-python-plain colored"
         }],
-        "img": ""
+        "img": "/images/projects/live-stream-preview.png"
     },
     {
         "id": 3,
         "title": "65 Pool",
-        "descriptionShort": "",
+        "descriptionShort": "A web app built on the Phoenix framework, 65 Pool is the best way to organize your sports pool competitions.",
         "descriptionLong": "",
         "details": "",
         "technologies": [{
@@ -66,6 +66,6 @@
                 "icon": "devicon-tailwindcss-plain colored"
             }
         ],
-        "img": ""
+        "img": "/images/projects/65-pool-preview.png"
     }
 ]
