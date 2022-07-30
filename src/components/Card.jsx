@@ -18,9 +18,14 @@ function Card(props) {
         <div className="flex flex-col gap-y-6 text-left px-8 pt-6 md:pt-8">
           {/* Description */}
           <p className="text-md sm:text-lg">{props.descriptionShort}</p>
+          <div className="border shadow-sm w-11/12 mx-auto object-fill">
+            <img className="" src={props.img} alt="Project preview image" />
+          </div>
           {/* Technologies */}
           <div className="flex flex-col gap-y-6 py-4">
-            {/* <h5 className="font-medium">Technologies</h5> */}
+            <h5 className="font-medium text-slate-700 text-center border border-x-0">
+              Technologies
+            </h5>
             <div className="flex flex-wrap justify-around gap-x-8 gap-y-8">
               {props.technologies.map((t, i) => (
                 <div
@@ -28,7 +33,9 @@ function Card(props) {
                   className="flex flex-col items-center gap-x-2 gap-y-1 w-3/12"
                 >
                   <i class={`${t.icon} text-4xl`}></i>
-                  <p className="text-center text-sm md:text-[1rem] whitespace-nowrap">{t.name}</p>
+                  <p className="text-center text-sm md:text-[1rem] whitespace-nowrap">
+                    {t.name}
+                  </p>
                 </div>
               ))}
             </div>
