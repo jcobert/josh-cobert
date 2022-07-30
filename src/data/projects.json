@@ -1,0 +1,71 @@
+[{
+        "id": 0,
+        "title": "Who's That?",
+        "descriptionShort": "An encyclopedia of the people in your life. And a cheat sheet for those who can't keep track.",
+        "descriptionLong": "",
+        "details": "",
+        "technologies": [{
+                "name": "React",
+                "icon": "devicon-react-original colored"
+            },
+            {
+                "name": "Redux",
+                "icon": "devicon-redux-original colored"
+            },
+            {
+                "name": "Tailwind CSS",
+                "icon": "devicon-tailwindcss-plain colored"
+            }
+        ],
+        "img": ""
+    },
+    {
+        "id": 1,
+        "title": "Geoguessr Map Creator",
+        "descriptionShort": "A simple Python script to help create a custom map in the Geoguessr game.",
+        "descriptionLong": "",
+        "details": "",
+        "technologies": [{
+            "name": "Python",
+            "icon": "devicon-python-plain colored"
+        }],
+        "img": ""
+    },
+    {
+        "id": 2,
+        "title": "Facebook Live Stream Configurator",
+        "descriptionShort": "A way to programmatically configure a Facebook Live Stream.",
+        "descriptionLong": "",
+        "details": "",
+        "technologies": [{
+            "name": "Python",
+            "icon": "devicon-python-plain colored"
+        }],
+        "img": ""
+    },
+    {
+        "id": 3,
+        "title": "65 Pool",
+        "descriptionShort": "",
+        "descriptionLong": "",
+        "details": "",
+        "technologies": [{
+                "name": "Phoenix",
+                "icon": "devicon-phoenix-plain colored"
+            },
+            {
+                "name": "Elixir",
+                "icon": "devicon-elixir-plain colored"
+            },
+            {
+                "name": "PostgreSQL",
+                "icon": "devicon-postgresql-plain colored"
+            },
+            {
+                "name": "Tailwind CSS",
+                "icon": "devicon-tailwindcss-plain colored"
+            }
+        ],
+        "img": ""
+    }
+]
