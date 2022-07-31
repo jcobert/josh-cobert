@@ -56,7 +56,7 @@ function CardPreview(props) {
 function CardFull(props) {
   return (
     <div className="text-center">
-      <div className="bg-slate-50 md:max-w-full mx-aut pb-2 sm:pb-4 md:pb-6 lg:pb-12 rounded-xl border round border-slate-400 shadow-md">
+      <div className="bg-slate-50 md:max-w-full mx-aut pb-12 sm:pb-10 lg:pb-12 rounded-xl border round border-slate-400 shadow-md">
         {/* Title */}
         <div className="py-4 font-semibold text-2xl md:text-2xl text-white bg-theme-primary rounded-[.685rem] rounded-b-none shadow-sm">
           <h4>{props.title}</h4>
@@ -75,7 +75,7 @@ function CardFull(props) {
               style={{ backgroundImage: `url(${props.img})` }}
             ></div>
           </div>
-          <div className="flex flex-col sm:gap-y-4 lg:flex-row lg:items-center lg:justify-around lg:w-full">
+          <div className="flex flex-col gap-y-4 lg:flex-row lg:items-center lg:justify-around lg:w-full">
             {/* Technologies */}
             <div className="flex flex-col gap-y-6 py-4 lg:w-6/12">
               <h5 className="font-medium text-slate-700 text-center border border-x-0">
@@ -96,7 +96,7 @@ function CardFull(props) {
               </div>
             </div>
             {/* Show More */}
-            <div className="bg-gray-50 hover:bg-theme-primary text-theme-primary hover:text-white font-medium w-10/12 sm:w-6/12 md:w-48 h-16 md:h-12 mx-auto rounded-md border border-theme-primary hover:border-white transition-all">
+            <div className="bg-gray-50 lg:self-end lg:mb-4 hover:bg-theme-primary text-theme-primary hover:text-white font-medium w-10/12 sm:w-6/12 md:w-48 h-16 md:h-12 mx-auto rounded-md border border-theme-primary hover:border-white transition-all">
               <button className="w-full h-full">
                 <div className="flex gap-x-1 justify-center h-full mx-auto">
                   <p className="self-center">See more</p>
