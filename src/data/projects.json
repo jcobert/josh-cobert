@@ -46,7 +46,7 @@
     {
         "id": 3,
         "title": "65 Pool",
-        "descriptionShort": "A web app built on the Phoenix framework, 65 Pool is the best way to organize your sports pool competitions.",
+        "descriptionShort": "A sports pool competition site, built on the Phoenix framework.",
         "descriptionLong": "",
         "details": "",
         "technologies": [{

@@ -4,7 +4,7 @@ function Heading() {
   return (
     <div>
       <div className="flex flex-col gap-y-8 md:gap-y-10">
-        <h1 className="font-flamenco text-theme-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center lg:text-left">
+        <h1 className="font-flamenco text-theme-primary text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl text-center lg:text-left">
           Hey, I'm Josh Cobert
         </h1>
         <p className="text-lg w-10/12 mx-auto md:w-8/12 lg:w-6/12 lg:mx-0">
