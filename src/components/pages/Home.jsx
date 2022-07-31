@@ -1,6 +1,6 @@
 import React from "react";
 import Heading, { getHeading } from "../Heading";
-import Card from "../Card";
+import { CardPreview } from "../Card";
 import projects from "../../data/projects.json";
 import { ChevronDoubleDownIcon } from "@heroicons/react/outline";
 
@@ -22,7 +22,7 @@ function Home() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 lg:max-w-7xl gap-y-14 sm:gap-y-16 gap-x-6 mx-auto">
         {projects.map((p) => (
-          <Card
+          <CardPreview
             key={p.id}
             title={p.title}
             descriptionShort={p.descriptionShort}
