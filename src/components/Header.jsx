@@ -72,7 +72,9 @@ function Header() {
                   {/* Mobile menu button*/}
                   <Disclosure.Button
                     onClick={handleHamburger}
-                    className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+                    className={`inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-theme-primary focus:outline-none
+                    ${visible ? "" : "p-1 m-1"}
+                    `}
                   >
                     <span className="sr-only">Open main menu</span>
                     {menuOpen ? (
@@ -105,10 +107,7 @@ function Header() {
                               isActive
                                 ? "text-theme-primary hover:text-slate-500 font-semibold"
                                 : "text-gray-700 hover:bg-theme-primary hover:text-white"
-                            } ${
-                              visible 
-                              ? "" 
-                              : "text-lg py-0"}`
+                            } ${visible ? "" : "text-lg py-0"}`
                           }
                           aria-current={item.current ? "page" : undefined}
                         >
