@@ -9,7 +9,7 @@ function Home() {
 
   return (
     <div>
-      <div className="lg:max-w-7xl lg:w-11/12 mx-auto mt-24 sm:mt-32 md:mt-40">
+      <div className="page-wrapper">
         <Heading
           key={heading.id}
           title={heading.title}
