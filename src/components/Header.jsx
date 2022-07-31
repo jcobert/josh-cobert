@@ -62,7 +62,7 @@ function Header() {
       >
         {({ close }) => (
           <>
-            <div className="lg:max-w-6xl lg:w-11/12 mx-auto px-2 sm:px-8 md:px-10 lg:px-0">
+            <div className="lg:max-w-7xl lg:w-11/12 mx-auto px-2 sm:px-8 md:px-10 lg:px-0">
               <div
                 className={`relative flex items-center justify-between h-16 ${
                   visible ? "h-16" : "h-[2.5rem]"
@@ -72,7 +72,9 @@ function Header() {
                   {/* Mobile menu button*/}
                   <Disclosure.Button
                     onClick={handleHamburger}
-                    className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+                    className={`inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-theme-primary focus:outline-none
+                    ${visible ? "" : "p-1 m-1"}
+                    `}
                   >
                     <span className="sr-only">Open main menu</span>
                     {menuOpen ? (
@@ -101,11 +103,11 @@ function Header() {
                           key={item.name}
                           to={item.to}
                           className={({ isActive }) =>
-                            `text-xl font-flamenco transition-all ${
+                            `text-xl font-flamenco transition-all px-3 py-2 rounded-md ${
                               isActive
                                 ? "text-theme-primary hover:text-slate-500 font-semibold"
                                 : "text-gray-700 hover:bg-theme-primary hover:text-white"
-                            } px-3 py-2 rounded-md`
+                            } ${visible ? "" : "text-lg py-0"}`
                           }
                           aria-current={item.current ? "page" : undefined}
                         >
