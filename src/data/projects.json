@@ -2,8 +2,8 @@
         "id": 0,
         "title": "Who's That?",
         "descriptionShort": "An encyclopedia of the people in your life. And a cheat sheet for those who can't keep track.",
-        "descriptionLong": "",
-        "details": "",
+        "descriptionLong": "Who's That? is an app for keeping track of people you want to remember. For example, you start dating someone and are introduced to their 8,000 friends and giant family. How can you possibly remember who everyone is? Well, here's your cheat sheet.",
+        "details": "Use it to study up before a party.\nDiscreetly open it up while you're at the bar and see one of your new boyfriend's buddies approaching.",
         "technologies": [{
                 "name": "React",
                 "icon": "devicon-react-original colored"
