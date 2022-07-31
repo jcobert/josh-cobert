@@ -101,11 +101,14 @@ function Header() {
                           key={item.name}
                           to={item.to}
                           className={({ isActive }) =>
-                            `text-xl font-flamenco transition-all ${
+                            `text-xl font-flamenco transition-all px-3 py-2 rounded-md ${
                               isActive
                                 ? "text-theme-primary hover:text-slate-500 font-semibold"
                                 : "text-gray-700 hover:bg-theme-primary hover:text-white"
-                            } px-3 py-2 rounded-md`
+                            } ${
+                              visible 
+                              ? "" 
+                              : "text-lg py-0"}`
                           }
                           aria-current={item.current ? "page" : undefined}
                         >
