@@ -17,7 +17,7 @@
                 "icon": "devicon-tailwindcss-plain colored"
             }
         ],
-        "img": "/images/projects/whos-that-preview.png"
+        "img": "/img/projects/whos-that-preview.png"
     },
     {
         "id": 1,
@@ -29,11 +29,11 @@
             "name": "Python",
             "icon": "devicon-python-plain colored"
         }],
-        "img": "/images/projects/geoguessr-preview.png"
+        "img": "/img/projects/geoguessr-preview.png"
     },
     {
         "id": 2,
-        "title": "Facebook Live Stream Configurator",
+        "title": "Live Stream Configurator",
         "descriptionShort": "A way to programmatically configure a Facebook Live Stream.",
         "descriptionLong": "",
         "details": "",
@@ -41,7 +41,7 @@
             "name": "Python",
             "icon": "devicon-python-plain colored"
         }],
-        "img": "/images/projects/live-stream-preview.png"
+        "img": "/img/projects/live-stream-preview.png"
     },
     {
         "id": 3,
@@ -66,6 +66,6 @@
                 "icon": "devicon-tailwindcss-plain colored"
             }
         ],
-        "img": "/images/projects/65-pool-preview.png"
+        "img": "/img/projects/65-pool-preview.png"
     }
 ]
