@@ -8,14 +8,14 @@ function Projects() {
   return (
     <div>
       <div className="page-wrapper">
-        <div>
+        <div className="mb-8 sm:mb-10 md:mb-14 lg:mb-20">
           <Heading
             key={heading.id}
             title={heading.title}
             paragraph={heading.paragraph}
           />
         </div>
-        <div className="flex flex-col w-10/12 xl:w-9/12 mx-auto gap-y-14 sm:gap-y-16">
+        <div className="flex flex-col w-10/12 xl:w-9/12 mx-auto gap-y-14 sm:gap-y-16 md:gap-y-20">
           {projects.map((p) => (
             <CardFull
               key={p.id}
