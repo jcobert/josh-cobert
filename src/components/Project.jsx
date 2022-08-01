@@ -18,8 +18,9 @@ function Project(props) {
             <p>All projects</p>
           </Link>
         </div>
-        <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-5 mt-8 md:mt-20">
-          {/* Heading */}
+        {/* Heading */}
+        <div className="grid grid-cols-1 lg:grid-rows-2 gap-y-10 md:grid-cols-2 lg:grid-cols-5 mt-8 md:mt-20">
+          {/* Title */}
           <div className="flex flex-col gap-y-8 md:gap-y-10 lg:col-span-2">
             <h1 className="font-quicksand text-theme-primary text-[2.5rem] sm:text-5xl md:text-6xl xl:text-7xl text-center md:text-left">
               {state.title}
@@ -28,18 +29,15 @@ function Project(props) {
               {state.descriptionShort}
             </p>
           </div>
-          <div className="lg:col-start-3 lg:col-span-3 w-full lg:w-11/12 mx-auto md:mr-0">
-            {/* Preview Image */}
+          {/* Preview Image */}
+          <div className="lg:col-start-3 lg:col-span-3 lg:row-span-2 w-11/12 lg:w-11/12 mx-auto lg:mt-4 xl:mb-12 md:mr-0">
             <div
-              className="h-60 lg:h-72 md:h-full bg-cover border shadow-sm md:shadow-lg"
+              className="h-60 md:h-52 lg:h-72 xl:h-80 bg-cover border shadow-md md:shadow-lg"
               style={{ backgroundImage: `url(${state.img})` }}
             ></div>
           </div>
-        </div>
-        {/* <div className="mt-12 lg:grid grid-cols-5"> */}
-        <div className="mt-12">
           {/* Technologies */}
-          <div className="flex flex-col gap-y-6 py-4 lg:col-span-2 w-11/12 md:w-9/12 lg:w-8/12 mx-auto">
+          <div className="flex flex-col gap-y-6 py-4 md:col-span-2 lg:col-span-2 w-11/12 md:w-10/12 lg:w-11/12 mx-auto lg:mx-0 md:mt-2 lg:mt-0 lg:py-0">
             <h5 className="font-medium text-slate-700 text-center border border-x-0">
               Technologies
             </h5>
@@ -58,6 +56,8 @@ function Project(props) {
             </div>
           </div>
         </div>
+        {/* <div className="mt-12 lg:grid grid-cols-5"> */}
+        {/* <div className="mt-12"></div> */}
         {/* Details */}
         <div className="lg:col-start-3 col-span-3 lg:w-11/12 m-auto px-8 md:px-8 mt-4">
           <Details key={state.key} state={state} />
@@ -149,7 +149,7 @@ function Details(props) {
 
   return (
     <div>
-      <div className="flex flex-col gap-y-8 text-md sm:text-lg">
+      <div className="flex flex-col gap-y-8 text-md sm:text-lg lg:w-11/12 xl:w-10/12 mx-auto mt-2 sm:mt-6">
         <div>
           <p className="">{props.state.descriptionLong}</p>
         </div>
