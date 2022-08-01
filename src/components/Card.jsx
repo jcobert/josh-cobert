@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/solid";
+import { ChevronRightIcon } from "@heroicons/react/solid";
 import { Link, NavLink } from "react-router-dom";
 
 function CardPreview(props) {
@@ -97,9 +97,15 @@ function CardFull(props) {
             </div>
             {/* Show More */}
             <div className="bg-gray-50 lg:self-end lg:mb-4 hover:bg-theme-primary text-theme-primary hover:text-white font-medium w-10/12 sm:w-6/12 md:w-48 h-16 md:h-12 mx-auto rounded-md border border-theme-primary hover:border-white transition-all">
-              <Link 
-              className="w-full h-full"
-              to={`${props.title.toLowerCase().split(' ').join('-').replace("'", '')}`}>
+              <Link
+                className="w-full h-full"
+                to={`/proj/${props.title
+                  .toLowerCase()
+                  .split(" ")
+                  .join("-")
+                  .replace("'", "")}`}
+                state={props.title}
+              >
                 <div className="flex gap-x-1 justify-center h-full mx-auto">
                   <p className="self-center">See more</p>
                   <div className="self-center">
