@@ -23,7 +23,7 @@
         "id": 1,
         "title": "Geoguessr Map Creator",
         "descriptionShort": "A simple Python script to help create a custom map in the Geoguessr game.",
-        "descriptionLong": "",
+        "descriptionLong": "This little Python script generates a random list of locations that you can then import into Geoguessr when creating a custom game map.",
         "details": "",
         "technologies": [{
             "name": "Python",

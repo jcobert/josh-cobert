@@ -15,20 +15,20 @@ function Project(props) {
             <p>All projects</p>
           </Link>
         </div>
-        <div className="grid grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-5 mt-8 md:mt-20">
+        <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-5 mt-8 md:mt-20">
           {/* Heading */}
           <div className="flex flex-col gap-y-8 md:gap-y-10 lg:col-span-2">
             <h1 className="font-quicksand text-theme-primary text-[2.5rem] sm:text-5xl md:text-6xl xl:text-7xl text-center lg:text-left">
               {state.title}
             </h1>
-            <p className="text-lg w-10/12 mx-auto md:w-8/12 lg:w-full lg:mx-0">
+            <p className="text-lg w-10/12 md:w-full md:px-4 lg:pl-0 mx-auto lg:mx-0">
               {state.descriptionShort}
             </p>
           </div>
           <div className="lg:col-start-3 lg:col-span-3 w-full lg:w-11/12 mx-auto">
             {/* Preview Image */}
             <div
-              className="h-60 lg:h-72 md:h-full bg-cover border shadow-sm"
+              className="h-60 lg:h-72 md:h-full bg-cover border shadow-sm md:shadow-lg"
               style={{ backgroundImage: `url(${state.img})` }}
             ></div>
           </div>
@@ -55,7 +55,7 @@ function Project(props) {
           </div>
           {/* Description */}
           <div className="lg:col-start-3 col-span-3 lg:w-11/12 m-auto px-8 md:px-8 mt-4">
-            <Details key={state.key} descriptionLong={state.descriptionLong} />
+            <Details key={state.key} state={state} />
           </div>
         </div>
       </div>
@@ -64,25 +64,78 @@ function Project(props) {
 }
 
 function Details(props) {
+  let content = "";
+  switch (props.state.title) {
+    case "Who's That?":
+      content = (
+        <div className="flex flex-col gap-y-8 text-md sm:text-lg">
+          <ul className="list-disc list-outside pl-8">
+            <li>Use it to study up before a party.</li>
+            <li>
+              Discreetly open it up while you're at the bar and see one of your
+              new boyfriend's buddies approaching.
+            </li>
+          </ul>
+          <div className="text-lg font-medium">
+            <p>
+              Check out the live demo at{" "}
+              <a
+                className="text-theme-primary hover:text-slate-400 transition-all"
+                href="https://whosthat.io"
+              >
+                whosthat.io
+              </a>
+            </p>
+          </div>
+        </div>
+      );
+      break;
+
+    case "Geoguessr Map Creator":
+      content = (
+        <div className="flex flex-col gap-y-8 text-md sm:text-lg">
+          <div>
+            <h4 className="font-medium text-lg mb-2">Background</h4>
+            <div className="flex flex-col gap-y-4">
+              <p>
+                When my friend showed me the Geoguessr game, I instantly fell in
+                love with the concept. If you’re not familiar, the premise is
+                that you are placed in a random location in the world in Google
+                street view. You then have to guess exactly where you are by
+                looking around.
+              </p>
+              <p>
+                There is a feature to create a custom game by choosing locations
+                on a map that you can then share and play with others. The
+                problem with this is that if you want to play a map that you
+                have created, you will know the locations in advance. What fun
+                is a game that you’re guaranteed to win?
+              </p>
+              <p>
+                I noticed that they included an option to import a CSV file with
+                coordinates, as an alternative to picking points on the map. I
+                saw this as an opportunity to automate the custom map creation
+                and allow myself to play the games as well as others. By having
+                the computer pick the locations at random, I could play along
+                with my friends and be at no advantage.
+              </p>
+            </div>
+          </div>
+        </div>
+      );
+      break;
+
+    default:
+      break;
+  }
+
   return (
     <div>
       <div className="flex flex-col gap-y-8 text-md sm:text-lg">
         <div>
-          <p className="lg:px-2">{props.descriptionLong}</p>
+          <p className="">{props.state.descriptionLong}</p>
         </div>
-        <ul className="list-disc list-outside pl-8">
-          <li>Use it to study up before a party.</li>
-          <li>
-            Discreetly open it up while you're at the bar and see one of your
-            new boyfriend's buddies approaching.
-          </li>
-        </ul>
-        <div>
-          <p>
-            Check out the live demo at{" "}
-            <a href="https://whosthat.io">whosthat.io</a>
-          </p>
-        </div>
+        <div>{content}</div>
       </div>
     </div>
   );

@@ -65,10 +65,9 @@ function CardFull(props) {
         <div className="flex flex-col gap-y-6 text-left px-8 pt-6 md:pt-8 lg:p-12 lg:pb-2">
           <div className="grid grid-cols-1 gap-y-6 lg:grid-cols-2">
             {/* Description */}
-            <p
-              className="lg:col-start-2 text-md sm:text-lg lg:px-2"
-              dangerouslySetInnerHTML={{ __html: props.descriptionLong }}
-            ></p>
+            <p className="lg:col-start-2 text-md sm:text-lg lg:px-2 self-center">
+              {props.descriptionLong}
+            </p>
             {/* Preview Image */}
             <div
               className="lg:col-start-1 lg:row-start-1 h-36 lg:h-48 bg-cover border shadow-sm w-full lg:w-11/12 mx-auto"
