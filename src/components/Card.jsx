@@ -104,7 +104,7 @@ function CardFull(props) {
                   .split(" ")
                   .join("-")
                   .replace("'", "")}`}
-                state={props.title}
+                state={props}
               >
                 <div className="flex gap-x-1 justify-center h-full mx-auto">
                   <p className="self-center">See more</p>
