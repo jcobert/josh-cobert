@@ -18,14 +18,14 @@ function Project(props) {
         <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-5 mt-8 md:mt-20">
           {/* Heading */}
           <div className="flex flex-col gap-y-8 md:gap-y-10 lg:col-span-2">
-            <h1 className="font-quicksand text-theme-primary text-[2.5rem] sm:text-5xl md:text-6xl xl:text-7xl text-center lg:text-left">
+            <h1 className="font-quicksand text-theme-primary text-[2.5rem] sm:text-5xl md:text-6xl xl:text-7xl text-center md:text-left">
               {state.title}
             </h1>
-            <p className="text-lg w-10/12 md:w-full md:px-4 lg:pl-0 mx-auto lg:mx-0">
+            <p className="text-lg w-10/12 md:w-full md:pr-4 mx-auto lg:mx-0">
               {state.descriptionShort}
             </p>
           </div>
-          <div className="lg:col-start-3 lg:col-span-3 w-full lg:w-11/12 mx-auto">
+          <div className="lg:col-start-3 lg:col-span-3 w-full lg:w-11/12 mx-auto md:mr-0">
             {/* Preview Image */}
             <div
               className="h-60 lg:h-72 md:h-full bg-cover border shadow-sm md:shadow-lg"
@@ -33,9 +33,10 @@ function Project(props) {
             ></div>
           </div>
         </div>
-        <div className="mt-12 lg:grid grid-cols-5">
+        {/* <div className="mt-12 lg:grid grid-cols-5"> */}
+        <div className="mt-12">
           {/* Technologies */}
-          <div className="flex flex-col gap-y-6 py-4 lg:col-span-2">
+          <div className="flex flex-col gap-y-6 py-4 lg:col-span-2 w-full md:w-9/12 lg:w-8/12 mx-auto">
             <h5 className="font-medium text-slate-700 text-center border border-x-0">
               Technologies
             </h5>
@@ -53,7 +54,7 @@ function Project(props) {
               ))}
             </div>
           </div>
-          {/* Description */}
+          {/* Details */}
           <div className="lg:col-start-3 col-span-3 lg:w-11/12 m-auto px-8 md:px-8 mt-4">
             <Details key={state.key} state={state} />
           </div>
@@ -119,6 +120,20 @@ function Details(props) {
                 the computer pick the locations at random, I could play along
                 with my friends and be at no advantage.
               </p>
+            </div>
+          </div>
+          <div>
+            <h4 className="font-medium text-lg mb-2">How it Works</h4>
+            <div className="flex flex-col gap-y-4">
+              <p>
+                The program works by randomly generating a pair of
+                latitude/longitude coordinates, querying that location against
+                the Google Maps Street View API to check if it exists, and
+                saving each valid location in a CSV file. This file can then be
+                imported into Geoguessr when creating a custom map.
+              </p>
+              <p></p>
+              <p></p>
             </div>
           </div>
         </div>
