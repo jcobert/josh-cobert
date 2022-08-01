@@ -9,8 +9,11 @@ function Project(props) {
     <div>
       <div className="page-wrapper md:mt-32">
         {/* Nav */}
-        <div>
-          <Link to={"/projects"} className="flex text-lg">
+        <div className="w-fit">
+          <Link
+            to={"/projects"}
+            className="flex text-lg text-theme-primary hover:text-slate-700 transition-all"
+          >
             <ChevronLeftIcon className="w-6" />
             <p>All projects</p>
           </Link>
@@ -36,7 +39,7 @@ function Project(props) {
         {/* <div className="mt-12 lg:grid grid-cols-5"> */}
         <div className="mt-12">
           {/* Technologies */}
-          <div className="flex flex-col gap-y-6 py-4 lg:col-span-2 w-full md:w-9/12 lg:w-8/12 mx-auto">
+          <div className="flex flex-col gap-y-6 py-4 lg:col-span-2 w-11/12 md:w-9/12 lg:w-8/12 mx-auto">
             <h5 className="font-medium text-slate-700 text-center border border-x-0">
               Technologies
             </h5>
@@ -54,10 +57,10 @@ function Project(props) {
               ))}
             </div>
           </div>
-          {/* Details */}
-          <div className="lg:col-start-3 col-span-3 lg:w-11/12 m-auto px-8 md:px-8 mt-4">
-            <Details key={state.key} state={state} />
-          </div>
+        </div>
+        {/* Details */}
+        <div className="lg:col-start-3 col-span-3 lg:w-11/12 m-auto px-8 md:px-8 mt-4">
+          <Details key={state.key} state={state} />
         </div>
       </div>
     </div>
