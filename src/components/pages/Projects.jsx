@@ -15,7 +15,7 @@ function Projects() {
             paragraph={heading.paragraph}
           />
         </div>
-        <div className="flex flex-col w-10/12 xl:w-9/12 mx-auto gap-y-14 sm:gap-y-16 md:gap-y-20">
+        <div className="flex flex-col w-11/12 xl:w-9/12 mx-auto gap-y-14 sm:gap-y-16 md:gap-y-20">
           {projects.map((p) => (
             <CardFull
               key={p.id}

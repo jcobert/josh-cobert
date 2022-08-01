@@ -7,7 +7,7 @@ import Home from "./components/pages/Home";
 import Projects from "./components/pages/Projects";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
-import Project from "./components/Project";
+import {Project, Details} from "./components/Project";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -22,7 +22,9 @@ root.render(
           <Route path="/projects" element={<Projects />}>
             <Route path="*" element={<Projects />} />
           </Route>
-          <Route path="/proj/:projectId" element={<Project />} />
+          <Route path="/proj" element={<Project />}>
+            <Route path=":projectId" element={<Details />} />
+          </Route>
           <Route path="*" element={<Home />} />
         </Route>
         {/* <Route path="*" element={<App />} /> */}

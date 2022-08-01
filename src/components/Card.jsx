@@ -56,7 +56,7 @@ function CardPreview(props) {
 function CardFull(props) {
   return (
     <div className="text-center">
-      <div className="bg-slate-50 md:max-w-full mx-aut pb-12 sm:pb-10 lg:pb-12 rounded-xl border round border-slate-400 shadow-md">
+      <div className="bg-slate-50 md:max-w-full mx-auto pb-12 sm:pb-10 lg:pb-12 rounded-xl border round border-slate-400 shadow-md">
         {/* Title */}
         <div className="py-4 font-semibold text-2xl md:text-2xl text-white bg-theme-primary rounded-[.685rem] rounded-b-none shadow-sm">
           <h4>{props.title}</h4>
