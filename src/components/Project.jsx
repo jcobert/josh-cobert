@@ -127,7 +127,9 @@ function Details(props) {
             </div>
           </div>
           <div>
-            <h4 className="font-medium text-lg md:text-xl mb-2">How it Works</h4>
+            <h4 className="font-medium text-lg md:text-xl mb-2">
+              How it Works
+            </h4>
             <div className="flex flex-col gap-y-4">
               <p>
                 The program works by randomly generating a pair of
@@ -155,7 +157,7 @@ function Details(props) {
                 </a>
               </p>
               <p>
-              <i class="fab fa-github text-slate-700"></i> View the code on{" "}
+                <i class="fab fa-github text-slate-700"></i> View the code on{" "}
                 <a
                   className="text-theme-primary hover:text-slate-600 transition-all"
                   href="https://github.com/jcobert/map-maker"
@@ -164,6 +166,177 @@ function Details(props) {
                 </a>
               </p>
             </div>
+          </div>
+        </div>
+      );
+      break;
+
+    case "Live Stream Configurator":
+      content = (
+        <div className="flex flex-col gap-y-8 text-md sm:text-lg">
+          <div>
+            <h4 className="font-medium text-lg md:text-xl mb-2">Background</h4>
+            <div className="flex flex-col gap-y-4">
+              <p>
+                As the 2020 pandemic shook the world and my musician father
+                could no longer perform live, he decided to take to the virtual
+                stage. He began performing and broadcasting concerts through the
+                Facebook Live platform, which brought with it a unique set of
+                challenges.
+              </p>
+              <p>
+                The process of starting a live stream through Facebook’s web
+                portal and configuring the streaming software on the computer
+                turned out to be a bit cumbersome and frustrating at times.
+                Through the web portal, you generate a stream key, which you
+                then enter into the settings of your streaming software to start
+                the broadcast. Many times, however, the web page would not load
+                or became unresponsive, which would derail the whole endeavor.
+              </p>
+              <p>
+                I knew there had to be a more efficient and reliable way to
+                achieve this task and after a little bit of research, I
+                familiarized myself with Facebook’s API and created an applet to
+                programmatically generate and retrieve a stream key.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h4 className="font-medium text-lg md:text-xl mb-2">
+              How it Works
+            </h4>
+            <div className="flex flex-col gap-y-4">
+              <p>
+                The program works by sending a POST request to the Facebook Live
+                Video API, passing along parameters such as title and
+                description for the live stream. A JSON object is returned,
+                which includes the secure stream URL.
+              </p>
+              <p>
+                In the case of configuring OBS for Facebook streaming, the
+                Facebook Live URL is predefined and only the stream key must be
+                entered. This program parses the stream key from the JSON data
+                and copies it to the clipboard so it can be easily pasted into
+                your streaming software.
+              </p>
+              <p>
+                For more information on the Facebook Live API, visit: <br></br>
+                <a
+                  className="text-theme-primary hover:text-slate-600 transition-all"
+                  href="https://developers.facebook.com/docs/live-video-api/"
+                >
+                  developers.facebook.com
+                </a>
+              </p>
+              <p>
+                For more information on OBS, visit: <br></br>
+                <a
+                  className="text-theme-primary hover:text-slate-600 transition-all"
+                  href="https://obsproject.com/"
+                >
+                  obsproject.com
+                </a>
+              </p>
+              <p>
+                <i class="fab fa-github text-slate-700"></i> View the code on{" "}
+                <a
+                  className="text-theme-primary hover:text-slate-600 transition-all"
+                  href="https://github.com/jcobert/facebook-live"
+                >
+                  GitHub
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      );
+      break;
+
+    case "65 Pool":
+      content = (
+        <div className="flex flex-col gap-y-8 text-md sm:text-lg">
+          <div>
+            <h4 className="font-medium text-lg md:text-xl mb-2">Background</h4>
+            <div className="flex flex-col gap-y-4">
+              <p>
+                This site is a web adaptation of a competition by the same name.
+                I don't know the full history, but I was introduced to 65 Pool
+                by my friend whose father had started this annual NFL playoff
+                pool with friends and family decades prior. I eventually got
+                invited to participate and have been playing every year since.
+              </p>
+              <p>
+                The concept is as follows:
+                <ul className="pl-4 list-disc list-outside">
+                  <li>People buy in for $65, which forms the prize pot.</li>
+                  <li>It lasts the duration of the NFL postseason.</li>
+                  <li>
+                    Each round of the playoffs, you make three picks for each
+                    game - winner, over/under, and spread.
+                  </li>
+                  <li>
+                    You get points for each correct pick and a running total is
+                    kept.
+                  </li>
+                  <li>
+                    The person with the most points at the end of the season
+                    wins.
+                  </li>
+                </ul>
+              </p>
+              <p>
+                Each year, someone organizes this 65 Pool and the process has
+                much room for improvement. The organizer writes down the game
+                lines on a piece of paper each week and sends out a photo of it.
+                We make our picks and either send them back via email, text, or
+                carrier pigeon. They keep a spreadhseet with all participants,
+                picks, and points.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h4 className="font-medium text-lg md:text-xl mb-2">Inspiration</h4>
+            <p>
+              This is a project I started working on with my good friend and
+              veteran software engineer,{" "}
+              <a
+                className="text-theme-primary hover:text-slate-600 transition-all"
+                href="https://github.com/jmagardino"
+              >
+                Joe Magardino
+              </a>
+              . After participating in 65 Pool for several years - witnessing
+              the inefficiencies and opportunities for improvement - we decided
+              to bring this game into the 21st century. By creating a
+              centralized platform, we are looking to streamline workflows, open
+              the door to new features, and maximize the potential of this great
+              concept. For me, this has been a great way to learn functional
+              programming with Elixir and explore the Phoenix framework.
+            </p>
+          </div>
+          <div className="flex flex-col gap-y-4">
+            <p>
+              If you're not familiar with Phoenix{" "}
+              <i className="text-2xl devicon-phoenix-plain colored align-middle"></i>
+              {" , "}I highly recommend you{" "}
+              <a
+                className="text-theme-primary hover:text-slate-600 transition-all"
+                href="https://www.phoenixframework.org/"
+              >
+                check it out.
+              </a>
+            </p>
+            <p>
+              Note: This project is still in development, but you can follow
+              along with us on{" "}
+              <a
+                className="text-theme-primary hover:text-slate-600 transition-all"
+                href="https://github.com/jmagardino/65-pool"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              .
+            </p>
           </div>
         </div>
       );
