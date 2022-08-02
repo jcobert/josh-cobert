@@ -1,6 +1,6 @@
 import React from "react";
-import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/solid";
-import { NavLink } from "react-router-dom";
+import { ChevronRightIcon } from "@heroicons/react/solid";
+import { Link, NavLink } from "react-router-dom";
 
 function CardPreview(props) {
   return (
@@ -56,7 +56,7 @@ function CardPreview(props) {
 function CardFull(props) {
   return (
     <div className="text-center">
-      <div className="bg-slate-50 md:max-w-full mx-aut pb-12 sm:pb-10 lg:pb-12 rounded-xl border round border-slate-400 shadow-md">
+      <div className="bg-slate-50 md:max-w-full mx-auto pb-12 sm:pb-10 lg:pb-12 rounded-xl border round border-slate-400 shadow-md">
         {/* Title */}
         <div className="py-4 font-semibold text-2xl md:text-2xl text-white bg-theme-primary rounded-[.685rem] rounded-b-none shadow-sm">
           <h4>{props.title}</h4>
@@ -65,10 +65,9 @@ function CardFull(props) {
         <div className="flex flex-col gap-y-6 text-left px-8 pt-6 md:pt-8 lg:p-12 lg:pb-2">
           <div className="grid grid-cols-1 gap-y-6 lg:grid-cols-2">
             {/* Description */}
-            <p
-              className="lg:col-start-2 text-md sm:text-lg lg:px-2"
-              dangerouslySetInnerHTML={{ __html: props.descriptionLong }}
-            ></p>
+            <p className="lg:col-start-2 text-md sm:text-lg lg:px-2 self-center">
+              {props.descriptionLong}
+            </p>
             {/* Preview Image */}
             <div
               className="lg:col-start-1 lg:row-start-1 h-36 lg:h-48 bg-cover border shadow-sm w-full lg:w-11/12 mx-auto"
@@ -97,14 +96,22 @@ function CardFull(props) {
             </div>
             {/* Show More */}
             <div className="bg-gray-50 lg:self-end lg:mb-4 hover:bg-theme-primary text-theme-primary hover:text-white font-medium w-10/12 sm:w-6/12 md:w-48 h-16 md:h-12 mx-auto rounded-md border border-theme-primary hover:border-white transition-all">
-              <button className="w-full h-full">
+              <Link
+                className="w-full h-full"
+                to={`/proj/${props.title
+                  .toLowerCase()
+                  .split(" ")
+                  .join("-")
+                  .replace("'", "")}`}
+                state={props}
+              >
                 <div className="flex gap-x-1 justify-center h-full mx-auto">
                   <p className="self-center">See more</p>
                   <div className="self-center">
                     <ChevronRightIcon className="w-6" />
                   </div>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
