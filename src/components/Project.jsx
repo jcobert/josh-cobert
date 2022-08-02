@@ -1,10 +1,13 @@
 import React from "react";
 // import projects from "../data/projects.json";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, Navigate } from "react-router-dom";
 import { ChevronLeftIcon } from "@heroicons/react/solid";
 
 function Project(props) {
   const state = useLocation().state;
+  if (state === null) {
+    return <Navigate to={"/projects"} />;
+  }
   return (
     <div>
       <div className="page-wrapper md:mt-32">
@@ -56,8 +59,6 @@ function Project(props) {
             </div>
           </div>
         </div>
-        {/* <div className="mt-12 lg:grid grid-cols-5"> */}
-        {/* <div className="mt-12"></div> */}
         {/* Details */}
         <div className="lg:col-start-3 col-span-3 lg:w-11/12 m-auto px-8 md:px-8 mt-4">
           <Details key={state.key} state={state} />

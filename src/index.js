@@ -7,7 +7,7 @@ import Home from "./components/pages/Home";
 import Projects from "./components/pages/Projects";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
-import { Project, Details } from "./components/Project";
+import { Project } from "./components/Project";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -26,7 +26,6 @@ root.render(
           <Route path="/proj" element={<Projects />} />
           <Route path="*" element={<Home />} />
         </Route>
-        {/* <Route path="*" element={<App />} /> */}
       </Routes>
     </Router>
   </React.StrictMode>
