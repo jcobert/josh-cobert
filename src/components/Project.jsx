@@ -19,7 +19,7 @@ function Project(props) {
           </Link>
         </div>
         {/* Heading */}
-        <div className="grid grid-cols-1 lg:grid-rows-2 gap-y-10 md:grid-cols-2 lg:grid-cols-5 mt-8 md:mt-20">
+        <div className="grid grid-cols-1 lg:grid-rows-1 gap-y-10 lg:gap-y-10 lg:mb-16 xl:mb-20 md:grid-cols-2 lg:grid-cols-5 mt-8 md:mt-20">
           {/* Title */}
           <div className="flex flex-col gap-y-8 md:gap-y-10 lg:col-span-2">
             <h1 className="font-quicksand text-theme-primary text-[2.5rem] sm:text-5xl md:text-6xl xl:text-7xl text-center md:text-left">
@@ -37,7 +37,7 @@ function Project(props) {
             ></div>
           </div>
           {/* Technologies */}
-          <div className="flex flex-col gap-y-6 py-4 md:col-span-2 lg:col-span-2 w-11/12 md:w-10/12 lg:w-11/12 mx-auto lg:mx-0 md:mt-2 lg:mt-0 lg:py-0">
+          <div className="flex flex-col gap-y-6 py-4 md:col-span-2 lg:col-span-2 w-11/12 md:w-10/12 lg:w-11/12 mx-auto lg:mx-0 md:mt-2 lg:mt-10 lg:py-0">
             <h5 className="font-medium text-slate-700 text-center border border-x-0">
               Technologies
             </h5>
@@ -135,8 +135,24 @@ function Details(props) {
                 saving each valid location in a CSV file. This file can then be
                 imported into Geoguessr when creating a custom map.
               </p>
-              <p></p>
-              <p></p>
+              <p>
+                For more information on the Google Maps API, visit: <br></br>
+                <a
+                  className="text-theme-primary hover:text-slate-600 transition-all"
+                  href="https://developers.google.com/maps/documentation/streetview/overview"
+                >
+                  developers.google.com/maps/documentation/streetview/overview
+                </a>
+              </p>
+              <p>
+                For more information on Geoguessr and to play, visit: <br></br>
+                <a
+                  className="text-theme-primary hover:text-slate-600 transition-all"
+                  href="https://www.geoguessr.com"
+                >
+                  geoguessr.com
+                </a>
+              </p>
             </div>
           </div>
         </div>
