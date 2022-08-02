@@ -13,7 +13,7 @@ function About() {
             paragraph={heading.paragraph}
           />
         </div>
-        <div className="flex flex-col gap-y-4 sm:gap-y-6 w-11/12 md:w-10/12 lg:w-8/12 xl:w-7/12 mx-auto lg:mx-0">
+        <div className="flex flex-col gap-y-4 sm:gap-y-6 text-md md:text-lg w-11/12 md:w-10/12 lg:w-8/12 xl:w-7/12 mx-auto lg:mx-0">
           <p>
             I am an all-around techy guy, with a love of designing and creating
             things. As a developer, I am always striving to automate and makes
