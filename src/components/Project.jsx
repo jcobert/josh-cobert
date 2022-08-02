@@ -69,6 +69,7 @@ function Project(props) {
 
 function Details(props) {
   let content = "";
+
   switch (props.state.title) {
     case "Who's That?":
       content = (
@@ -84,7 +85,7 @@ function Details(props) {
             <p>
               Check out the live demo at{" "}
               <a
-                className="text-theme-primary hover:text-slate-400 transition-all"
+                className="text-theme-primary hover:text-slate-600 transition-all"
                 href="https://whosthat.io"
               >
                 whosthat.io
@@ -99,7 +100,7 @@ function Details(props) {
       content = (
         <div className="flex flex-col gap-y-8 text-md sm:text-lg">
           <div>
-            <h4 className="font-medium text-lg mb-2">Background</h4>
+            <h4 className="font-medium text-lg md:text-xl mb-2">Background</h4>
             <div className="flex flex-col gap-y-4">
               <p>
                 When my friend showed me the Geoguessr game, I instantly fell in
@@ -126,7 +127,7 @@ function Details(props) {
             </div>
           </div>
           <div>
-            <h4 className="font-medium text-lg mb-2">How it Works</h4>
+            <h4 className="font-medium text-lg md:text-xl mb-2">How it Works</h4>
             <div className="flex flex-col gap-y-4">
               <p>
                 The program works by randomly generating a pair of
@@ -141,7 +142,7 @@ function Details(props) {
                   className="text-theme-primary hover:text-slate-600 transition-all"
                   href="https://developers.google.com/maps/documentation/streetview/overview"
                 >
-                  developers.google.com/maps/documentation/streetview/overview
+                  developers.google.com/maps
                 </a>
               </p>
               <p>
@@ -151,6 +152,15 @@ function Details(props) {
                   href="https://www.geoguessr.com"
                 >
                   geoguessr.com
+                </a>
+              </p>
+              <p>
+              <i class="fab fa-github text-slate-700"></i> View the code on{" "}
+                <a
+                  className="text-theme-primary hover:text-slate-600 transition-all"
+                  href="https://github.com/jcobert/map-maker"
+                >
+                  GitHub
                 </a>
               </p>
             </div>
