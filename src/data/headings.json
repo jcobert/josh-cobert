@@ -1,13 +1,25 @@
 [{
-    "id": 0,
-    "page": "Home",
-    "title": "Hi, I'm Josh Cobert",
-    "paragraph": "Thanks for paying me a visit. I am a software developer and creative professional. I like long walks on the beach and refactoring code. Please check out some of the projects I have worked on and feel free to reach out if you'd like to collaborate!"
-},
-{
-    "id": 1,
-    "page": "Projects",
-    "title": "Projects",
-    "paragraph": "Here's a selection of projects that I've worked on - a blend of solo creations and collaborative endeavors."
-}
+        "id": 0,
+        "page": "Home",
+        "title": "Hi, I'm Josh Cobert",
+        "paragraph": "Thanks for paying me a visit. I am a software developer and creative professional. I like long walks on the beach and refactoring code. Please check out some of the projects I have worked on and feel free to reach out if you'd like to collaborate!"
+    },
+    {
+        "id": 1,
+        "page": "Projects",
+        "title": "Projects",
+        "paragraph": "Here's a selection of projects that I've worked on - a blend of solo creations and collaborative endeavors."
+    },
+    {
+        "id": 2,
+        "page": "About",
+        "title": "Who is this Guy?",
+        "paragraph": "A great question! As I'm sure your time is valuable, I'll try to be succint."
+    },
+    {
+        "id": 3,
+        "page": "Contact",
+        "title": "Contact Me",
+        "paragraph": "Please feel free to reach out with any questions, suggestions, or opportunities you may have!"
+    }
 ]
