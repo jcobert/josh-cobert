@@ -18,7 +18,7 @@ const getHeading = (p) => {
 function Heading(props) {
   return (
     <div>
-      <div className="flex flex-col gap-y-8 md:gap-y-10">
+      <div className="flex flex-col gap-y-4 sm:gap-y-6 md:gap-y-8">
         <h1 className="font-flamenco text-theme-primary text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl text-center lg:text-left">
           {props.title}
         </h1>
