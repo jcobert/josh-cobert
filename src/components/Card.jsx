@@ -39,12 +39,15 @@ function CardPreview(props) {
             </div>
             {/* CTA */}
             <div className="bg-gray-50 hover:bg-theme-primary text-theme-primary hover:text-white font-medium w-full sm:w-6/12 md:w-full h-16 md:h-12 mx-auto mt-4 mb-8 rounded-md border border-theme-primary hover:border-white transition-all">
-              <NavLink to={"/projects"} className="flex justify-center h-full">
+              <Link
+                to={`/projects/${props.id}`}
+                className="flex justify-center h-full"
+              >
                 <p className="self-center">Check it out</p>
                 <div className="self-center">
                   <ChevronRightIcon className="w-6" />
                 </div>
-              </NavLink>
+              </Link>
             </div>
           </div>
         </div>
@@ -96,13 +99,18 @@ function CardFull(props) {
             </div>
             {/* Show More */}
             <div className="bg-gray-50 lg:self-end lg:mb-4 hover:bg-theme-primary text-theme-primary hover:text-white font-medium w-10/12 sm:w-6/12 md:w-48 h-16 md:h-12 mx-auto rounded-md border border-theme-primary hover:border-white transition-all">
-              <Link
+              {/* <Link
                 className="w-full h-full"
-                to={`/proj/${props.title
+                to={`/projects/${props.title
                   .toLowerCase()
                   .split(" ")
                   .join("-")
                   .replace("'", "")}`}
+                state={props}
+              > */}
+              <Link
+                className="w-full h-full"
+                to={`/projects/${props.id}`}
                 state={props}
               >
                 <div className="flex gap-x-1 justify-center h-full mx-auto">

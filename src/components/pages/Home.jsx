@@ -24,6 +24,7 @@ function Home() {
         {projects.map((p) => (
           <CardPreview
             key={p.id}
+            id={p.id}
             title={p.title}
             descriptionShort={p.descriptionShort}
             descriptionLong={p.descriptionLong}
