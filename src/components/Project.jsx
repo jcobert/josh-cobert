@@ -295,8 +295,11 @@ function Details(props) {
                 much room for improvement. The organizer writes down the game
                 lines on a piece of paper each week and sends out a photo of it.
                 We make our picks and either send them back via email, text, or
-                carrier pigeon. They keep a spreadhseet with all participants,
-                picks, and points.
+                carrier pigeon - sometimes by proxy if the participant isn't in
+                direct communication with the organizer. The organizer maintains
+                a spreadhseet with all participants, their picks, and points.
+                You can see how there is room for error and unnecessary burden
+                on the organizer.
               </p>
             </div>
           </div>
