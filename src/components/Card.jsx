@@ -1,6 +1,6 @@
 import React from "react";
 import { ChevronRightIcon } from "@heroicons/react/solid";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function CardPreview(props) {
   return (

@@ -20,7 +20,7 @@ function Home() {
         <h4 className="text-slate-600">Some of my projects...</h4>
         <ChevronDoubleDownIcon className="w-8 text-slate-400" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 lg:max-w-7xl gap-y-14 sm:gap-y-16 gap-x-6 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 px-2 md:px-0 lg:max-w-7xl gap-y-14 sm:gap-y-16 gap-x-6 mx-auto">
         {projects.map((p) => (
           <CardPreview
             key={p.id}
