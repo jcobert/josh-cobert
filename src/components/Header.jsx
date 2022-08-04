@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Disclosure, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import ScrollToTop from "./ScrollRestore";
 
 const navigation = [
   { name: "Home", to: "/", current: true },
@@ -55,6 +56,7 @@ function Header() {
 
   return (
     <div>
+      <ScrollToTop />
       <Disclosure
         as="nav"
         className={`bg-gray-100 fixed w-full z-50 top-0 shadow-md mb-16`}
