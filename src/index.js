@@ -19,11 +19,8 @@ root.render(
           <Route index path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />}>
-            <Route path="*" element={<Projects />} />
-          </Route>
-          <Route path="/proj/:projectId" element={<Project />} />
-          <Route path="/proj" element={<Projects />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:projectId" element={<Project />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>

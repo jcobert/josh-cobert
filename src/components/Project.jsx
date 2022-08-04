@@ -1,11 +1,12 @@
 import React from "react";
-// import projects from "../data/projects.json";
-import { Link, useLocation, Navigate } from "react-router-dom";
+import projects from "../data/projects.json";
+import { Link, useParams, Navigate } from "react-router-dom";
 import { ChevronLeftIcon } from "@heroicons/react/solid";
 
 function Project(props) {
-  const state = useLocation().state;
-  if (state === null) {
+  let { projectId } = useParams();
+
+  if (!projects.map((p) => p.id.toString()).includes(projectId)) {
     return <Navigate to={"/projects"} />;
   }
   return (
@@ -26,17 +27,17 @@ function Project(props) {
           {/* Title */}
           <div className="flex flex-col gap-y-8 md:gap-y-10 lg:col-span-2">
             <h1 className="font-quicksand text-theme-primary text-[2.5rem] sm:text-5xl md:text-6xl xl:text-7xl text-center md:text-left">
-              {state.title}
+              {projects[projectId].title}
             </h1>
             <p className="text-lg w-10/12 md:w-full md:pr-4 mx-auto lg:mx-0">
-              {state.descriptionShort}
+              {projects[projectId].descriptionShort}
             </p>
           </div>
           {/* Preview Image */}
           <div className="lg:col-start-3 lg:col-span-3 lg:row-span-2 w-11/12 lg:w-11/12 mx-auto lg:mt-4 xl:mb-12 md:mr-0">
             <div
               className="h-60 md:h-52 lg:h-72 xl:h-80 bg-cover border shadow-md md:shadow-lg"
-              style={{ backgroundImage: `url(${state.img})` }}
+              style={{ backgroundImage: `url(${projects[projectId].img})` }}
             ></div>
           </div>
           {/* Technologies */}
@@ -45,7 +46,7 @@ function Project(props) {
               Technologies
             </h5>
             <div className="flex flex-wrap justify-around gap-x-8 gap-y-8">
-              {state.technologies.map((t, i) => (
+              {projects[projectId].technologies.map((t, i) => (
                 <div
                   key={i}
                   className="flex flex-col items-center gap-x-2 gap-y-1 w-3/12"
@@ -61,7 +62,11 @@ function Project(props) {
         </div>
         {/* Details */}
         <div className="lg:col-start-3 col-span-3 lg:w-11/12 m-auto px-8 md:px-8 mt-4">
-          <Details key={state.key} state={state} />
+          <Details
+            key={projects[projectId].id}
+            title={projects[projectId].title}
+            descriptionLong={projects[projectId].descriptionLong}
+          />
         </div>
       </div>
     </div>
@@ -71,7 +76,7 @@ function Project(props) {
 function Details(props) {
   let content = "";
 
-  switch (props.state.title) {
+  switch (props.title) {
     case "Who's That?":
       content = (
         <div className="flex flex-col gap-y-8 text-md sm:text-lg">
@@ -351,7 +356,7 @@ function Details(props) {
     <div>
       <div className="flex flex-col gap-y-8 text-md sm:text-lg lg:w-11/12 xl:w-10/12 mx-auto mt-2 sm:mt-6">
         <div>
-          <p className="">{props.state.descriptionLong}</p>
+          <p className="">{props.descriptionLong}</p>
         </div>
         <div>{content}</div>
       </div>
