@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div>
       <div className="page-wrapper">
-        <div className="mb-14 sm:mb-20 md:mb-24 lg:mb-32">
+        <div className="mb-16 sm:mb-20 md:mb-24 lg:mb-32">
           <Heading
             key={heading.id}
             title={heading.title}
@@ -14,7 +14,7 @@ function Contact() {
           />
         </div>
         {/* Links */}
-        <div className="flex flex-col lg:flex-row lg:justify-evenly gap-x-12 lg:gap-x-20 gap-y-12 md:gap-y-16 w-fit lg:w-10/12 mx-auto">
+        <div className="flex flex-col lg:flex-row lg:justify-evenly gap-x-12 lg:gap-x-20 gap-y-20 md:gap-y-20 w-fit lg:w-10/12 mx-auto">
           <div className="text-xl flex-1">
             <a
               class="flex flex-col sm:flex-row lg:flex-col justify-center sm:justify-start items-center gap-y-2 lg:gap-y-4 gap-x-4 text-theme-primary hover:text-slate-600 transition-all"
