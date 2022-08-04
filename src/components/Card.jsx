@@ -39,12 +39,15 @@ function CardPreview(props) {
             </div>
             {/* CTA */}
             <div className="bg-gray-50 hover:bg-theme-primary text-theme-primary hover:text-white font-medium w-full sm:w-6/12 md:w-full h-16 md:h-12 mx-auto mt-4 mb-8 rounded-md border border-theme-primary hover:border-white transition-all">
-              <NavLink to={"/projects"} className="flex justify-center h-full">
+              <Link
+                to={`/projects/${props.id}`}
+                className="flex justify-center h-full"
+              >
                 <p className="self-center">Check it out</p>
                 <div className="self-center">
                   <ChevronRightIcon className="w-6" />
                 </div>
-              </NavLink>
+              </Link>
             </div>
           </div>
         </div>
