@@ -6,22 +6,23 @@ import { ChevronDoubleDownIcon } from "@heroicons/react/outline";
 
 function Home() {
   const heading = getHeading("Home");
-  let cards = [];
+  const projectCards = [];
+  const featuredCount = 2;
 
-  for (let i = 0; i < 2; i++) {
-    cards.push(
+  projects.map((p) =>
+    projectCards.push(
       <CardPreview
-        key={projects[i].id}
-        id={projects[i].id}
-        title={projects[i].title}
-        descriptionShort={projects[i].descriptionShort}
-        descriptionLong={projects[i].descriptionLong}
-        details={projects[i].details}
-        technologies={projects[i].technologies}
-        img={projects[i].img}
+        key={p.id}
+        id={p.id}
+        title={p.title}
+        descriptionShort={p.descriptionShort}
+        descriptionLong={p.descriptionLong}
+        details={p.details}
+        technologies={p.technologies}
+        img={p.img}
       />
-    );
-  }
+    )
+  );
 
   return (
     <div>
@@ -37,19 +38,7 @@ function Home() {
         <ChevronDoubleDownIcon className="w-8 text-slate-400" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 px-2 md:px-0 lg:max-w-7xl gap-y-14 sm:gap-y-16 gap-x-6 mx-auto">
-        {/* {projects.map((p) => (
-          <CardPreview
-            key={p.id}
-            id={p.id}
-            title={p.title}
-            descriptionShort={p.descriptionShort}
-            descriptionLong={p.descriptionLong}
-            details={p.details}
-            technologies={p.technologies}
-            img={p.img}
-          />
-        ))} */}
-        {cards}
+        {projectCards.slice(0, featuredCount)}
       </div>
     </div>
   );
