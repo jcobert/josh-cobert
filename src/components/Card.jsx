@@ -16,7 +16,7 @@ function CardPreview(props) {
           <p className="text-md sm:text-lg">{props.descriptionShort}</p>
           {/* Preview Image */}
           <div
-            className="h-36 bg-cover border shadow-sm w-full mx-auto flex-initial lg:flex-auto"
+            className="h-36 bg-cover border shadow-sm w-full mx-auto lg:flex-initial"
             style={{ backgroundImage: `url(${props.img})` }}
           ></div>
           {/* Technologies */}
@@ -37,18 +37,18 @@ function CardPreview(props) {
                 </div>
               ))}
             </div>
-            {/* CTA */}
-            <div className="bg-gray-50 hover:bg-theme-primary text-theme-primary hover:text-white font-medium w-full sm:w-6/12 md:w-full h-16 md:h-12 mx-auto mt-4 mb-8 rounded-md border border-theme-primary hover:border-white transition-all">
-              <Link
-                to={`/projects/${props.id}`}
-                className="flex justify-center h-full"
-              >
-                <p className="self-center">Check it out</p>
-                <div className="self-center">
-                  <ChevronRightIcon className="w-6" />
-                </div>
-              </Link>
-            </div>
+          </div>
+          {/* CTA */}
+          <div className="bg-gray-50 hover:bg-theme-primary text-theme-primary hover:text-white font-medium w-full sm:w-6/12 md:w-full h-16 md:h-12 mx-auto mt-4 mb-8 rounded-md border border-theme-primary hover:border-white transition-all">
+            <Link
+              to={`/projects/${props.id}`}
+              className="flex justify-center h-full"
+            >
+              <p className="self-center">Check it out</p>
+              <div className="self-center">
+                <ChevronRightIcon className="w-6" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
