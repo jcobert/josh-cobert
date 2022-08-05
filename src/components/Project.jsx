@@ -89,7 +89,7 @@ function Details(props) {
           </ul>
           <div className="text-lg font-medium">
             <p>
-              Check out the live demo at{" "}
+              Check out the live demo and learn more at{" "}
               <a
                 className="text-theme-primary hover:text-slate-600 transition-all"
                 href="https://whosthat.io"

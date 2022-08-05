@@ -37,7 +37,7 @@ function Home() {
           paragraph={heading.paragraph}
         />
       </div>
-      <div className="flex flex-col items-center gap-y-8 text-xl text-theme-primary font-medium mt-14 md:mt-20 lg:mt-24 mb-16">
+      <div className="flex flex-col items-center gap-y-8 text-xl text-theme-primary font-medium mt-14 md:mt-20 lg:mt-24 mb-12">
         <h4 className="text-slate-600">Some of my projects...</h4>
         <ChevronDoubleDownIcon className="w-8 text-slate-400" />
       </div>
