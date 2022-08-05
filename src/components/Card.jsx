@@ -5,18 +5,18 @@ import { Link } from "react-router-dom";
 function CardPreview(props) {
   return (
     <div className="text-center">
-      <div className="bg-slate-50 md:max-w-2xl mx-auto rounded-xl border round border-slate-400 shadow-md">
+      <div className="bg-slate-50 md:max-w-2xl mx-auto rounded-xl border round border-slate-400 shadow-md h-full flex flex-col justify-between">
         {/* Title */}
         <div className="py-4 font-semibold text-2xl md:text-2xl text-white bg-theme-primary rounded-[.685rem] rounded-b-none shadow-sm">
           <h4>{props.title}</h4>
         </div>
         {/* Body */}
-        <div className="flex flex-col gap-y-6 text-left px-8 pt-6 md:pt-8">
+        <div className="flex flex-col gap-y-6 text-left px-8 pt-6 md:pt-8 h-full justify-between">
           {/* Description */}
           <p className="text-md sm:text-lg">{props.descriptionShort}</p>
           {/* Preview Image */}
           <div
-            className="h-36 bg-cover border shadow-sm w-full mx-auto"
+            className="h-36 bg-cover border shadow-sm w-full mx-auto flex-initial lg:flex-auto"
             style={{ backgroundImage: `url(${props.img})` }}
           ></div>
           {/* Technologies */}
