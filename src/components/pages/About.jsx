@@ -17,7 +17,7 @@ function About() {
           <div className="lg:relative xl:left-20">
             <div
               className="w-20 h-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 mb-4 mx-auto sm:ml-0 sm:mr-4 sm:my-auto float-none sm:float-left bg-contain bg-center bg-no-repeat"
-              style={{ backgroundImage: `url("/img/about-1.png")` }}
+              style={{ backgroundImage: `url("/img/flaticons/about-1.svg")` }}
             ></div>
             <p className="md:pt-4 lg:pt-2 md:pl-12 lg:pl-16">
               I am an all-around techy guy, with a love of designing and
@@ -30,7 +30,7 @@ function About() {
           <div className="">
             <div
               className="w-20 h-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 mb-4 mx-auto sm:ml-0 sm:mr-4 md:mr-0 md:ml-4 sm:my-auto float-none sm:float-left md:float-right bg-contain bg-center bg-no-repeat"
-              style={{ backgroundImage: `url("/img/about-2.png")` }}
+              style={{ backgroundImage: `url("/img/flaticons/about-2.svg")` }}
             ></div>
             <p className="md:pt-4 lg:pt-2">
               I have experience as an IT project manager and know infrastructure
@@ -41,7 +41,7 @@ function About() {
           <div className="lg:relative xl:right-20">
             <div
               className="w-20 h-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 mb-4 mx-auto sm:ml-0 sm:mr-4 sm:my-auto float-none sm:float-left bg-contain bg-center bg-no-repeat"
-              style={{ backgroundImage: `url("/img/about-3.png")` }}
+              style={{ backgroundImage: `url("/img/flaticons/about-3.svg")` }}
             ></div>
             <p className="md:pt-4 lg:pt-2 md:pl-12 lg:pl-16">
               In addition to writing code, I also enjoy writing songs and making
