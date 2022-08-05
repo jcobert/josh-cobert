@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Disclosure, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import ScrollToTop from "./ScrollRestore";
 
 const navigation = [
   { name: "Home", to: "/", current: true },
@@ -55,6 +56,7 @@ function Header() {
 
   return (
     <div>
+      <ScrollToTop />
       <Disclosure
         as="nav"
         className={`bg-gray-100 fixed w-full z-50 top-0 shadow-md mb-16`}
@@ -134,9 +136,9 @@ function Header() {
                       key={item.name}
                       to={item.to}
                       className={({ isActive }) =>
-                        `text-2xl font-flamenco ${
+                        `text-[1.65rem] leading-8 font-flamenco ${
                           isActive
-                            ? "bg-theme-primary text-white font-bold"
+                            ? "bg-theme-primary text-white font-medium"
                             : "text-gray-700 hover:bg-slate-500 hover:text-white"
                         } block px-3 py-2 rounded-md text-base font-medium text-right`
                       }

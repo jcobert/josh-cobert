@@ -22,7 +22,7 @@
         "id": 1,
         "title": "65 Pool",
         "descriptionShort": "A sports pool competition site, built on the Phoenix framework.",
-        "descriptionLong": "65 Pool is a site where users can create, join, and compete in friendly sports betting pools - think of it as a cross between fantasy football and sports betting. This web site was created to streamline the process of managing and participating in these pools.",
+        "descriptionLong": "65 Pool is a site where users can create, join, and compete in friendly sports betting pools - think of it as a cross between a March Madness bracket and a sports book, with the simplicity and leisure of Super Bowl squares. This web site was created to streamline the process of managing and participating in these pools.",
         "technologies": [{
                 "name": "Phoenix",
                 "icon": "devicon-phoenix-plain colored"

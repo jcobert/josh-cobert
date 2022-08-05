@@ -1,22 +1,22 @@
 import React from "react";
 import { ChevronRightIcon } from "@heroicons/react/solid";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function CardPreview(props) {
   return (
     <div className="text-center">
-      <div className="bg-slate-50 md:max-w-2xl mx-auto rounded-xl border round border-slate-400 shadow-md">
+      <div className="bg-slate-50 md:max-w-2xl mx-auto rounded-xl border round border-slate-400 shadow-md h-full flex flex-col justify-between">
         {/* Title */}
         <div className="py-4 font-semibold text-2xl md:text-2xl text-white bg-theme-primary rounded-[.685rem] rounded-b-none shadow-sm">
           <h4>{props.title}</h4>
         </div>
         {/* Body */}
-        <div className="flex flex-col gap-y-6 text-left px-8 pt-6 md:pt-8">
+        <div className="flex flex-col gap-y-6 text-left px-8 pt-6 md:pt-8 h-full justify-between">
           {/* Description */}
           <p className="text-md sm:text-lg">{props.descriptionShort}</p>
           {/* Preview Image */}
           <div
-            className="h-36 bg-cover border shadow-sm w-full mx-auto"
+            className="h-36 bg-cover border shadow-sm w-full mx-auto lg:flex-initial"
             style={{ backgroundImage: `url(${props.img})` }}
           ></div>
           {/* Technologies */}
@@ -37,18 +37,18 @@ function CardPreview(props) {
                 </div>
               ))}
             </div>
-            {/* CTA */}
-            <div className="bg-gray-50 hover:bg-theme-primary text-theme-primary hover:text-white font-medium w-full sm:w-6/12 md:w-full h-16 md:h-12 mx-auto mt-4 mb-8 rounded-md border border-theme-primary hover:border-white transition-all">
-              <Link
-                to={`/projects/${props.id}`}
-                className="flex justify-center h-full"
-              >
-                <p className="self-center">Check it out</p>
-                <div className="self-center">
-                  <ChevronRightIcon className="w-6" />
-                </div>
-              </Link>
-            </div>
+          </div>
+          {/* CTA */}
+          <div className="bg-gray-50 hover:bg-theme-primary text-theme-primary hover:text-white font-medium w-full sm:w-6/12 md:w-full h-16 md:h-12 mx-auto mt-4 mb-8 rounded-md border border-theme-primary hover:border-white transition-all">
+            <Link
+              to={`/projects/${props.id}`}
+              className="flex justify-center h-full"
+            >
+              <p className="self-center">Check it out</p>
+              <div className="self-center">
+                <ChevronRightIcon className="w-6" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
