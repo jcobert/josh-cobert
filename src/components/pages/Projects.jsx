@@ -8,7 +8,7 @@ function Projects() {
   return (
     <div>
       <div className="page-wrapper">
-        <div className="mb-12 md:mb-14 lg:mb-20">
+        <div className="mb-12 md:mb-14 lg:mb-20 lg:w-7/12">
           <Heading
             key={heading.id}
             title={heading.title}

@@ -31,13 +31,24 @@ function Home() {
   return (
     <div>
       <div className="page-wrapper">
-        <Heading
-          key={heading.id}
-          title={heading.title}
-          paragraph={heading.paragraph}
-        />
+        <div className="grid grid-cols-1 lg:grid-cols-8">
+          <div className="lg:col-span-5">
+            <Heading
+              key={heading.id}
+              title={heading.title}
+              paragraph={heading.paragraph}
+            />
+          </div>
+          {/* Photo */}
+          <div className="w-full lg:col-span-3">
+            <div
+              className="h-40 h- w-40 lg:h-64 lg:w-64 mx-auto bg-center bg-cover bg-no-repeat rounded-full shadow-md border border-slate-200"
+              style={{ backgroundImage: 'url("/img/photos/headshot.png")' }}
+            ></div>
+          </div>
+        </div>
       </div>
-      <div className="flex flex-col items-center gap-y-8 text-xl text-theme-primary font-medium mt-14 md:mt-20 lg:mt-24 mb-12">
+      <div className="flex flex-col items-center gap-y-8 text-xl text-theme-primary font-medium mt-8 md:mt-20 lg:mt-24 mb-12">
         <h4 className="text-slate-600">Some of my projects...</h4>
         <ChevronDoubleDownIcon className="w-8 text-slate-400 motion-safe:animate-bounce" />
       </div>

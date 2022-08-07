@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div>
       <div className="page-wrapper">
-        <div className="mb-16 sm:mb-20 md:mb-24 lg:mb-32">
+        <div className="mb-16 sm:mb-20 md:mb-24 lg:mb-32 lg:w-7/12">
           <Heading
             key={heading.id}
             title={heading.title}
