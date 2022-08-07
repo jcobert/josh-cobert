@@ -22,7 +22,7 @@ function Heading(props) {
         <h1 className="font-flamenco text-theme-primary text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl text-center lg:text-left">
           {props.title}
         </h1>
-        <p className="text-lg w-10/12 mx-auto md:w-8/12 lg:w-6/12 lg:mx-0">
+        <p className="text-xl w-11/12 mx-auto md:w-8/12 lg:w-6/12 lg:mx-0">
           {props.paragraph}
         </p>
       </div>
