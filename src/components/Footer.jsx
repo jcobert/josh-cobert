@@ -41,7 +41,7 @@ function Footer() {
           {/* Credit */}
           <div class="">
             <p id="copyright" class="">
-              &#9935;{" " + currentYear} Josh Cobert
+              &#128736;{" " + currentYear} Josh Cobert
             </p>
           </div>
         </div>

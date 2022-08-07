@@ -136,7 +136,7 @@ function Header() {
                       key={item.name}
                       to={item.to}
                       className={({ isActive }) =>
-                        `text-[1.65rem] leading-8 font-flamenco ${
+                        `text-[1.7rem] leading-8 font-flamenco ${
                           isActive
                             ? "bg-theme-primary text-white font-medium"
                             : "text-gray-700 hover:bg-slate-500 hover:text-white"
