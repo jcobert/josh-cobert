@@ -22,9 +22,9 @@ function About() {
             <p className="md:pt-4 lg:pt-2 md:pl-12 lg:pl-16">
               I am an all-around techy guy, with a love of designing and
               creating things. As a developer, I am always striving to automate
-              and makes things as modular as possible. I believe that clean and
-              intuitive frontends are a must, as is an efficient and reliable
-              backend.
+              and make things as modular as possible. I believe that clean and
+              intuitive frontends are a must, as are efficient and reliable
+              backends.
             </p>
           </div>
           <div className="">
