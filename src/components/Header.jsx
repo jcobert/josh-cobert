@@ -90,7 +90,7 @@ function Header() {
                   <div className="flex-shrink-0 flex items-center">
                     <NavLink key={"logoHomeSm"} to={"/"}>
                       <div
-                        className={`border bg-white border-theme-primary hover:border-slate-300 hover:text-theme-primary transition rounded-full w-12 h-12 pt-1 pl-[.1rem] ${
+                        className={`border-2 bg-white hover:bg-theme-primary border-slate-300 hover:border-slate-200 text-theme-primary hover:text-white transition rounded-full w-12 h-12 pt-1 pl-[.1rem] ${
                           visible ? "" : "h-[2rem] w-[2rem] pt-0"
                         }`}
                       >
