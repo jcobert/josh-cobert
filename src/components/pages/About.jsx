@@ -6,14 +6,14 @@ function About() {
   return (
     <div>
       <div className="page-wrapper">
-        <div className="mb-14 sm:mb-20 md:mb-24">
+        <div className="mb-14 sm:mb-20 md:mb-24 lg:w-7/12">
           <Heading
             key={heading.id}
             title={heading.title}
             paragraph={heading.paragraph}
           />
         </div>
-        <div className="flex flex-col gap-y-10 sm:gap-y-16 text-md md:text-lg w-11/12 md:w-10/12 lg:w-8/12 xl:w-7/12 mx-auto">
+        <div className="flex flex-col gap-y-14 sm:gap-y-16 text-md md:text-lg w-11/12 md:w-10/12 lg:w-8/12 xl:w-7/12 mx-auto">
           <div className="lg:relative xl:left-20">
             <div
               className="w-20 h-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 mb-4 mx-auto sm:ml-0 sm:mr-4 sm:my-auto float-none sm:float-left bg-contain bg-center bg-no-repeat"
