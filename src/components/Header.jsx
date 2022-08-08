@@ -89,13 +89,19 @@ function Header() {
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
                   <div className="flex-shrink-0 flex items-center">
                     <NavLink key={"logoHomeSm"} to={"/"}>
-                      <h4
-                        className={`block font-flamenco text-left text-3xl hover:text-theme-primary transition ${
-                          visible ? "text-3xl" : "text-xl"
+                      <div
+                        className={`border bg-white border-theme-primary hover:border-slate-300 hover:text-theme-primary transition rounded-full w-12 h-12 pt-1 pl-[.1rem] ${
+                          visible ? "" : "h-[2rem] w-[2rem] pt-0"
                         }`}
                       >
-                        Josh Cobert
-                      </h4>
+                        <h4
+                          className={`block font-flamenco text-center text-3xl ${
+                            visible ? "text-3xl" : "text-xl"
+                          }`}
+                        >
+                          JC
+                        </h4>
+                      </div>
                     </NavLink>
                   </div>
                   <div className="hidden sm:block sm:ml-6 my-auto">
