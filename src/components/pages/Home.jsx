@@ -42,13 +42,13 @@ function Home() {
           {/* Photo */}
           <div className="w-full lg:col-span-3">
             <div
-              className="h-40 h- w-40 lg:h-64 lg:w-64 mx-auto bg-center bg-cover bg-no-repeat rounded-full shadow-md border border-slate-200"
+              className="h-40 h- w-40 md:h-48 md:w-48 lg:h-64 lg:w-64 mx-auto bg-center bg-cover bg-no-repeat rounded-full shadow-lg border-4 border-slate-300"
               style={{ backgroundImage: 'url("/img/photos/headshot.png")' }}
             ></div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-y-8 text-xl text-theme-primary font-medium mt-8 md:mt-20 lg:mt-24 mb-12">
+      <div className="flex flex-col items-center gap-y-8 text-xl text-theme-primary font-medium mt-8 md:mt-16 lg:mt-24 mb-12">
         <h4 className="text-slate-600">Some of my projects...</h4>
         <ChevronDoubleDownIcon className="w-8 text-slate-400 motion-safe:animate-bounce" />
       </div>
