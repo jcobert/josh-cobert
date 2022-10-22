@@ -77,6 +77,45 @@ function Details(props) {
   let content = "";
 
   switch (props.title) {
+    case "The Eye Test":
+      content = (
+        <div className="flex flex-col gap-y-8 text-md sm:text-lg">
+          <div>
+            <p>
+              The Eye Test is a sports-themed podcast hosted by my good friend
+              Brian Donovan. I built this website to showcase the podcast and
+              also expand the brand to include a blog. This site and the brand
+              may scale in the future to include a store for selling merchandise
+              or other new functionality, so stay tuned...
+            </p>
+          </div>
+          <div className="text-lg font-medium">
+            <p>
+              View the site live and explore The Eye Test at{" "}
+              <a
+                className="text-theme-primary hover:text-slate-600 transition-all"
+                href="https://eyetestpodcast.com"
+              >
+                eyetestpodcast.com
+              </a>
+            </p>
+          </div>
+          <div>
+            <p>
+              Interested in the code behind this project? View it on{" "}
+              <a
+                className="text-theme-primary hover:text-slate-600 transition-all"
+                href="https://github.com/jcobert/the-eye-test-podcast"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+      );
+      break;
+
     case "Who's That?":
       content = (
         <div className="flex flex-col gap-y-8 text-md sm:text-lg">

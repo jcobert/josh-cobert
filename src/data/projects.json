@@ -1,8 +1,28 @@
 [{
         "id": 0,
+        "title": "The Eye Test",
+        "descriptionShort": "The official home of The Eye Test podcast and blog, built with Gatsby.",
+        "descriptionLong": "This website includes the ability to playback podcast episodes, a blog fed by Contentful CMS, and general information about The Eye Test.",
+        "technologies": [{
+                "name": "Gatsby",
+                "icon": "devicon-gatsby-plain colored"
+            },
+            {
+                "name": "React",
+                "icon": "devicon-react-original colored"
+            },
+            {
+                "name": "Tailwind CSS",
+                "icon": "devicon-tailwindcss-plain colored"
+            }
+        ],
+        "img": "/img/projects/the-eye-test-preview.png"
+    },
+    {
+        "id": 1,
         "title": "Who's That?",
         "descriptionShort": "An encyclopedia of the people in your life. And a cheat sheet for those who can't keep track.",
-        "descriptionLong": "Who's That? is an app for keeping track of people you want to remember. For example, you start dating someone and are introduced to their 8,000 friends and giant family. How can you possibly remember who everyone is? Well, here's your cheat sheet.",        
+        "descriptionLong": "Who's That? is an app for keeping track of people you want to remember. For example, you start dating someone and are introduced to their 8,000 friends and giant family. How can you possibly remember who everyone is? Well, here's your cheat sheet.",
         "technologies": [{
                 "name": "React",
                 "icon": "devicon-react-original colored"
@@ -19,7 +39,7 @@
         "img": "/img/projects/whos-that-preview.png"
     },
     {
-        "id": 1,
+        "id": 2,
         "title": "65 Pool",
         "descriptionShort": "A sports pool competition site, built on the Phoenix framework.",
         "descriptionLong": "65 Pool is a site where users can create, join, and compete in friendly sports betting pools - think of it as a cross between a March Madness bracket and a sports book, with the simplicity and leisure of Super Bowl squares. This web site was created to streamline the process of managing and participating in these pools.",
@@ -43,7 +63,7 @@
         "img": "/img/projects/65-pool-preview.png"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Geoguessr Map Creator",
         "descriptionShort": "A simple Python script to help create a custom map in the Geoguessr game.",
         "descriptionLong": "This little Python script generates a random list of locations that you can then import into Geoguessr when creating a custom game map.",
@@ -54,7 +74,7 @@
         "img": "/img/projects/geoguessr-preview.png"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Live Stream Configurator",
         "descriptionShort": "A way to programmatically configure a Facebook Live Stream.",
         "descriptionLong": "This program taps into the Facebook Live Video API and starts a new live stream. You can then configure your streaming software such as OBS, using the RTMPS secure stream URL provided by Facebook.",
