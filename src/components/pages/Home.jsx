@@ -42,21 +42,21 @@ function Home() {
           {/* Photo */}
           <div className="w-full lg:col-span-3">
             <div
-              className="h-40 h- w-40 md:h-48 md:w-48 lg:h-64 lg:w-64 mx-auto bg-center bg-cover bg-no-repeat rounded-full shadow-lg border-4 border-slate-300"
-              style={{ backgroundImage: 'url("/img/photos/headshot.png")' }}
+              className="w-40 h-40 mx-auto bg-center bg-no-repeat bg-cover border-4 rounded-full shadow-lg h- md:h-48 md:w-48 lg:h-64 lg:w-64 border-slate-300"
+              style={{ backgroundImage: 'url("/img/photos/headshot.jpg")' }}
             ></div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-y-8 text-xl text-theme-primary font-medium mt-8 md:mt-16 lg:mt-24 mb-12">
+      <div className="flex flex-col items-center mt-8 mb-12 text-xl font-medium gap-y-8 text-theme-primary md:mt-16 lg:mt-24">
         <h4 className="text-slate-600">Some of my projects...</h4>
         <ChevronDoubleDownIcon className="w-8 text-slate-400 motion-safe:animate-bounce" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 px-2 md:px-0 lg:max-w-7xl gap-y-14 sm:gap-y-16 gap-x-6 mx-auto">
+      <div className="grid w-11/12 grid-cols-1 px-2 mx-auto md:grid-cols-2 lg:grid-cols-3 md:px-0 lg:max-w-7xl gap-y-14 sm:gap-y-16 gap-x-6">
         {projectCards.slice(0, featuredCount)}
         {/* Show all button */}
-        <div className="px-8 self-center lg:col-start-2">
-          <div className="bg-theme-primary hover:bg-slate-500 text-white text-xl font-medium w-full sm:w-6/12 md:w-full h-20 mx-auto mt-4 mb-8 rounded-md border border-white hover:border-theme-primary transition-all">
+        <div className="self-center px-8 lg:col-start-2">
+          <div className="w-full h-20 mx-auto mt-4 mb-8 text-xl font-medium text-white transition-all border border-white rounded-md bg-theme-primary hover:bg-slate-500 sm:w-6/12 md:w-full hover:border-theme-primary">
             <Link to={"/projects"} className="flex justify-center h-full">
               <p className="self-center">All projects</p>
               <div className="self-center">
